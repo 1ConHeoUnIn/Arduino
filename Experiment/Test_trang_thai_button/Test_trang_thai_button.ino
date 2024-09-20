@@ -3,7 +3,7 @@ int nut=2;
 int led=3;
 void setup()
 {
-  pinMode(nut, INPUT_PULLUP);
+  pinMode(nut, INPUT);
   pinMode(led, OUTPUT);
   Serial.begin(9600);
 }

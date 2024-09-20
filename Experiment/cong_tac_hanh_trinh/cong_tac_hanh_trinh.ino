@@ -1,13 +1,17 @@
-int ct=3;
+int ctht1=3;
+int ctht2=4;
 void setup() {
-  pinMode (ct, INPUT);
+  pinMode (ctht1, INPUT);
+  pinMode (ctht2, INPUT);
   Serial.begin(9600);
 
 }
 
 void loop() {
-  int ct_state = digitalRead(ct);
-  Serial.println(ct_state);
-  delay(200);
+  int ht1_state = digitalRead(ctht1);
+  int ht2_state = digitalRead(ctht2);
+  Serial.println(ht1_state);
+  Serial.println(ht2_state);
+  delay(100);
 
 }
