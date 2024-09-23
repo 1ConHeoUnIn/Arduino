@@ -30,7 +30,7 @@ void loop() {
   
 
 
-    if(up_state ==0 && down_state !=0 && ctht1_state ==0)
+    if(up_state ==0 && down_state !=0 && ctht1_state ==0) //khi đụng thanh dẫn thì dừng lại
     {
       go_up();
     }
@@ -53,7 +53,7 @@ void go_up() {
 
 void go_down() {
     digitalWrite(inA, LOW);
-    analogWrite(inB, 150);
+    digitalWrite(inB, HIGH);
     
 }
 
