@@ -13,13 +13,6 @@ void loop()
   int trangthai=digitalRead(nut);
   Serial.println(trangthai);//In ra trạng thái hiện tại
  
-  if(trangthai==0)
-  {
-  digitalWrite(led,HIGH);
-  }
-  else 
-  {
-    digitalWrite(led,LOW);
-  }
+  Serial.println(trangthai);
   
 }
